@@ -26,7 +26,7 @@ function AttendanceRecordsPage() {
      }
  
     try {
-      const response = await axios.get('http://attendance-api-eosin.vercel.app/api/attendance', {
+      const response = await axios.get('http://localhost:5000/api/attendance', {
         headers: {
           'Authorization': `Bearer ${token}` // Include the authentication token in the headers
         }
