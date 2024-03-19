@@ -63,8 +63,8 @@ th {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
-  width: 80%;
-  max-width: 600px; /* Limit the width of the modal for smaller screens */
+  width: 50%;
+  max-width: 460px; /* Limit the width of the modal for smaller screens */
   padding: 20px;
   display: flex;
   align-items: center;
