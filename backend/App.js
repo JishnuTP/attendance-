@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors())
 
-mongoose.connect('mongodb://localhost:27017/attendace', {
+mongoose.connect(MONGODB_URL, {
     useNewUrlParser: true, useUnifiedTopology:
         true
 }).then(() => console.log(" mongoDB connected")).catch(err => {
