@@ -28,7 +28,7 @@ function CalendarPage() {
         console.log(isoDateString);
 
         try {
-          await axios.post('http://localhost:5000/api/attendance/mark', { date: isoDateString, status: 'present' }, {
+          await axios.post('http://attendance-api-eosin.vercel.app/api/attendance/mark', { date: isoDateString, status: 'present' }, {
             headers: {
               'Authorization': `Bearer ${token}` // Include the authentication token in the headers
             }

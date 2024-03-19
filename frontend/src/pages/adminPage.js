@@ -31,7 +31,7 @@ const App = () => {
   useEffect(() => {
     const fetchAttendance = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/attendanceRecord');
+        const response = await axios.get('http://attendance-api-eosin.vercel.app/api/attendanceRecord');
         setAttendance(response.data);
       } catch (error) {
         console.error('Error fetching attendance records:', error);
@@ -43,7 +43,7 @@ const App = () => {
 
   const handleSetStatus = async () => {
     try {
-      await axios.post(`http://localhost:5000/api/attendance/${selectedId}`, { status });
+      await axios.post(`http://attendance-api-eosin.vercel.app/api/attendance/${selectedId}`, { status });
       // Refresh attendance data after updating status
       setOpen(false);
       window.location.reload();
